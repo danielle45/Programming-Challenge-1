@@ -8,7 +8,7 @@
 #include "subsystems/DriveSystem.h"
 #include "commands/JoystickDrive.h"
 
-DriveSystem::DriveSystem() : Subsystem("DriveSystem"), frontLeftMotor(1), rearLeftMotor(2), frontRightMotor(3), rearRightMotor(4)
+DriveSystem::DriveSystem() : Subsystem("DriveSystem"), frontLeftMotor(4), rearLeftMotor(5), frontRightMotor(1), rearRightMotor(0)
 {
   frontLeftMotor.SetInverted(false);
   rearLeftMotor.SetInverted(false);

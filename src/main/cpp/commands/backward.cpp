@@ -6,12 +6,11 @@
 /*----------------------------------------------------------------------------*/
 
 #include "commands/backward.h"
-#include "commands/forward.h"
 #include "Robot.h"
-#include <frc/Timer.h >
-#include "forward.cpp"
+#include <frc/Timer.h>
 
-backward::backward(double tp) {
+backward::backward(double tp) 
+{
   // Use Requires() here to declare subsystem dependencies
   // eg. Requires(Robot::chassis.get());
   Requires(&globalRobot.driveSystem);
