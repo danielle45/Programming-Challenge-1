@@ -9,6 +9,7 @@
 
 #include <frc/commands/Command.h>
 #include <frc/smartdashboard/SendableChooser.h>
+#include <frc/TimedRobot.h>
 
 
 #include "OI.h"
@@ -33,6 +34,7 @@ class Robot : public frc::TimedRobot {
  private:
   // Have it null by default so that if testing teleop it
   // doesn't have undefined behavior and potentially crash.
+  std::unique_ptr<frc::Command> m_Command;
 };
 
 extern Robot globalRobot;

@@ -8,7 +8,6 @@
 #pragma once
 
 #include <frc/commands/Subsystem.h>
-#include <frc/WPILib.h>
 #include "ctre/phoenix.h"
 
 class DriveSystem : public frc::Subsystem {

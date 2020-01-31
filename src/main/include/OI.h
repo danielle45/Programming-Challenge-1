@@ -7,7 +7,7 @@
 
 #pragma once
 
-#include <frc/WPILib.h>
+#include <frc/Joystick.h>
 
 class OI {
  public:

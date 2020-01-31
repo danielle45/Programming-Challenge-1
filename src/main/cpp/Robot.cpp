@@ -9,6 +9,8 @@
 
 #include <frc/commands/Scheduler.h>
 #include <frc/smartdashboard/SmartDashboard.h>
+#include <commands/forward.h>
+#include <subsystems/DriveSystem.h>
 
 Robot globalRobot;
 
@@ -63,7 +65,11 @@ void Robot::TeleopInit() {
   // this line or comment it out.
 }
 
-void Robot::TeleopPeriodic() { frc::Scheduler::GetInstance()->Run(); }
+void Robot::TeleopPeriodic() { 
+  frc::Scheduler::GetInstance()->Run(); 
+  m_Command.reset(new forward(1, 1));
+  m_Command->Start();
+}
 
 void Robot::TestPeriodic() {}
 
